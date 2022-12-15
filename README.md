@@ -20,3 +20,5 @@ Following are the description of the available scripts:
 
 1. teleop.py - Use this script to control the mobile base of the robot.
 2. publisher.py - It is used to initialize the configuration of the robot. Type 0 followed by the publisher.py to take the robot to collapsed position, and 1 to take it to the extended position.
+
+Please checkout the following link for visualizing the working of the package : https://drive.google.com/drive/folders/1r95u0Vq24YU3A0hC_s1uwHW8knL1vMpW
