@@ -3,9 +3,9 @@ A novel mobile manipulator with a collapsible arm created for my final project o
 
 Please find the CAD model of the robot in CAD_model.zip 
 
-To run the ROS/URDF package in Gazebo, extract the transformers.zip folder to your catkin workspace, and build it first with 
-1. catkin_make, followed by
-2. source ~/catkin_ws/devel/setup.bash
+To run the ROS/URDF package in Gazebo, extract the transformers.zip folder to your catkin workspace, and do the following to build it: 
+1. Navigate to your catkin workspace folder, open terminal and enter 'catkin_make' to build the workspace.
+2. Enter the following command in your terminal 'source ~/catkin_ws/devel/setup.bash'
 
 Once the building process is done, you can simply launch the package in Gazebo by using the following command in your terminal:
 roslaunch transformer template.launch
