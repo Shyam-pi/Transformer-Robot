@@ -1,6 +1,8 @@
 # Transformer-Robot
 A novel mobile manipulator with a collapsible arm created for my final project of ENPM662 at the University of Maryland, College Park
 
+Please find the CAD model of the robot in CAD model.zip 
+
 To run the ROS/URDF package in Gazebo, extract the transformers.zip folder to your catkin workspace, and build it first with 
 1. catkin_make, followed by
 2. source ~/catkin_ws/devel/setup.bash
