@@ -1,0 +1,81 @@
+# Robot name goes here
+transformer:
+  # default controller
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Controller 1
+  FL_axle_chassis_controller: # change the name
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: FL_axle_chassis # Name of the joint.  
+    pid : {p: 180.0 , i: 1.5 , d: 3.0} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0} 
+
+  # Controller 2
+  FR_axle_chassis_controller: # change the name
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: FR_axle_chassis # Name of the joint.  
+    pid : {p: 180.0 , i: 1.5 , d: 3.0} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+  
+  # Controller 3
+  BL_wheel_axle_controller: # change the name
+    type: velocity_controllers/JointVelocityController # Type of controller. 
+    joint: BL_wheel_axle # Name of the joint.  
+  
+  # Controller 4
+  BR_wheel_axle_controller: # change the name
+    type: velocity_controllers/JointVelocityController # Type of controller. 
+    joint: BR_wheel_axle # Name of the joint.
+  
+  # Controller 5
+  link1_chassis_controller: # change the name
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: link1_chassis # Name of the joint.  
+    pid : {p: 100.0 , i: 1.5 , d: 3.0} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+    
+  # Controller 6
+  link2_link1_controller: # change the name
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: link2_link1 # Name of the joint.  
+    pid : {p: 100.0 , i: 1.5 , d: 10.0} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+    
+  # Controller 7
+  link3_link2_controller: # change the name
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: link3_link2 # Name of the joint.  
+    pid : {p: 180.0 , i: 10.0 , d: 10.0} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+    
+  # Controller 8
+  link4_link3_controller: # change the name
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: link4_link3 # Name of the joint.  
+    pid : {p: 30.0 , i: 3.0 , d: 3.0} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+    
+  # Controller 9
+  link5_link4_controller: # change the name
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: link5_link4 # Name of the joint.  
+    pid : {p: 70.0 , i: 15 , d: 0.01} # Enter your pid values eg. {p: 100.0 , i: 1.0 , d: 0.0}
+    
+  # Controller 10
+  link6_link5_controller: # change the name
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: link6_link5 # Name of the joint.  
+    pid : {p: 30.0 , i: 3.0 , d: 3.0} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+    
+  # Controller 11
+  finger1_link6_controller: # change the name
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: finger1_link6 # Name of the joint.  
+    pid : {p: 0.01 , i: 20 , d: 0.001} # Enter your pid values eg. {p: 100.0 , i: 1.0 , d: 0.0}
+    
+  # Controller 12
+  finger2_link6_controller: # change the name
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: finger2_link6 # Name of the joint.  
+    pid : {p: 0.01 , i: 20 , d: 0.001} # Enter your pid values eg. {p: 100.0 , i: 1.0 , d: 0.0}
+  
+
+
+
+ 

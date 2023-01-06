@@ -1,0 +1,1 @@
+controller_joint_names: ['FL_axle_chassis', 'FL_wheel_axle', 'FR_axle_chassis', 'FR_wheel_axle', 'BR_wheel_axle', 'BL_wheel_axle', 'link1_chassis', 'link2_link1', 'link3_link2', 'link4_link3', 'link5_link4', 'link6_link5', 'finger1_link6', 'finger2_link6', ]
